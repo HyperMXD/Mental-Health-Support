@@ -7,5 +7,4 @@ SpeechRecognition
 ollama
 langchain-ollama
 llama-parse
-sphinx
-sphinx_rtd_theme==1.3.0
+
