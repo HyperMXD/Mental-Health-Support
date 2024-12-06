@@ -33,8 +33,9 @@ To install these libraries, use:
 
 Key Components
 --------------
-
-### Initialize Chroma Database
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Initialize Chroma Database
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Chroma vector database is loaded with embedded documents to enable similarity-based retrieval:
 
