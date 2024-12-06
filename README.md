@@ -44,26 +44,6 @@ ollama run llama3.1
 
 *llama3.1 is the model used in this project*
 
-## RAG
+## Documentation
 
-RAG stands for Retrieval-Augmented Generation, we will be using it so that the model can respond to the user's query from specific data (which either he didn't have before, or we're projecting the responses only on that data).
-
-You can use this technique to avoid possible hallucinations if the subject is very specific.
-
-### Steps
-
-#### 1- Ingesting the documents into a vector Database
-
-The ```rag.py``` is made for this task.
-
-Using LLama_Parse, ```psychology_data.md``` is saved and used to extract the data.
-
-The data is then splitted into chunks, Embedded using the Ollama_Embeddings function and stored in a Chroma vector Database.
-
-#### 2- Loading the vector database and generating answers
-
-The ```chat_with_rag.py``` file contains this part.
-
-The concept is to retrieve the answers from the database once the user is talking about some mental health concept or symptom.
-
-
+Check out the documentation here: [documentation](https://mental-health-support.readthedocs.io/en/latest/)
