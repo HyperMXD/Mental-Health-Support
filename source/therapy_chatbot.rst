@@ -46,8 +46,9 @@ The Chroma vector database is loaded with embedded documents to enable similarit
        embedding_function=OllamaEmbeddings(model="mxbai-embed-large:latest"),
        collection_name="rag-chroma"
    )
-
-### Retrieval Logic
+^^^^^^^^^^^^^^^
+Retrieval Logic
+^^^^^^^^^^^^^^^
 
 The `retrieve_from_db` function retrieves relevant documents from the Chroma database based on the user's query:
 
@@ -59,7 +60,9 @@ The `retrieve_from_db` function retrieves relevant documents from the Chroma dat
        retrieved_docs = retriever.invoke(question)
        return retrieved_docs[1].page_content
 
-### Chatbot Response Generation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Chatbot Response Generation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The `generate_response` function creates a reply to the user's query. It defines the chatbot's role, ensuring responses are empathetic and contextually relevant:
 
@@ -83,8 +86,9 @@ The `generate_response` function creates a reply to the user's query. It defines
        )
        return response["message"]["content"]
 
-### Streamlit UI and Interaction
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Streamlit UI and Interaction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The chatbot interface is implemented using Streamlit:
 
 1. **Chat History**: Displays the history of user and chatbot interactions.
@@ -93,7 +97,9 @@ The chatbot interface is implemented using Streamlit:
    - Audio input: Users can record their voice, which is transcribed into text.
 3. **Real-Time Responses**: The chatbot processes the input and displays a response.
 
-#### Main Function
+^^^^^^^^^^^^^
+Main Function
+^^^^^^^^^^^^^
 
 The `main` function initializes the chatbot interface and handles user inputs:
 
