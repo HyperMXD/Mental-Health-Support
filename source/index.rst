@@ -32,7 +32,9 @@ Requirements
 
 To be able to run the applications, you must install the libraries used with this command :
 
-``pip install requirements.txt``
+.. code-block:: javascript
+  :linenos:
+   pip install requirements.txt
 
 ------
 Ollama
