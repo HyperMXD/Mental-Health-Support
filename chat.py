@@ -15,7 +15,7 @@ def generate_response(user_message: str, chat_history: list=[]):
     my_message.append({"role": "user", "content": user_message})
 #define model&input for response 
     response = ollama.chat(                      
-        model="llama3.1",
+        model="llama3.2",
         messages=my_message
         )
     return response["message"]["content"]

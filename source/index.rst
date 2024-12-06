@@ -12,6 +12,14 @@ It's goal is to make it **easier** for people to find someone they can **talk wi
 
 The amount of people getting depressed and mental illness keeps on increasing day by day. Therefore, it's a must to find a solution to help people get back on the right track!
 
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   Requirements
+   Ollama
+   RAG
+
 ====================
 Building the chatbot
 ====================
@@ -24,9 +32,8 @@ Requirements
 
 To be able to run the applications, you must install the libraries used with this command :
 
-```
-pip install requirements.txt
-```
+``pip install requirements.txt
+``
 
 ------
 Ollama
@@ -38,13 +45,13 @@ in this project we will be using the **ollama** library.
 Mac
 ^^^
 
-`Link Download <https://ollama.com/download/Ollama-darwin.zip>`_
+`Download <https://ollama.com/download/Ollama-darwin.zip>`_ now.
 
 ^^^^^^^
 Windows
 ^^^^^^^
 
-`Link Download <https://ollama.com/download/OllamaSetup.exe>`_
+`Download <https://ollama.com/download/OllamaSetup.exe>`_ now.
 
 
 ^^^^^
@@ -52,9 +59,8 @@ Linux
 ^^^^^
 
 
-```
-curl -fsSL https://ollama.com/install.sh | sh
-```
+``curl -fsSL https://ollama.com/install.sh | sh
+``
 
 ----------
 QuickStart
@@ -64,9 +70,8 @@ you can now easily get a LLM model locally and chat with it using ollama.
 
 open a cmd and run the command:
 
-```
-ollama run llama3.1
-```
+``ollama run llama3.1
+``
 
 *llama3.1 is the model used in this project*
 
@@ -85,19 +90,14 @@ Steps
 
 **1- Ingesting the documents into a vector Database**
 
-The ```rag.py``` is made for this task.
+The ``rag.py`` is made for this task.
 
-Using LLama_Parse, ```psychology_data.md``` is saved and used to extract the data.
+Using LLama_Parse, ``psychology_data.md`` is saved and used to extract the data.
 
 The data is then splitted into chunks, Embedded using the Ollama_Embeddings function and stored in a Chroma vector Database.
 
 **2- Loading the vector database and generating answers**
 
-The ```chat_with_rag.py``` file contains this part.
+The ``chat_with_rag.py`` file contains this part.
 
 The concept is to retrieve the answers from the database once the user is talking about some mental health concept or symptom.
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
