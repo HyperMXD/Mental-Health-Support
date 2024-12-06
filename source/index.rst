@@ -16,9 +16,9 @@ The amount of people getting depressed and mental illness keeps on increasing da
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   Requirements
-   Ollama
-   RAG
+      Requirements
+      Ollama
+      RAG
 
 ====================
 Building the chatbot
@@ -32,8 +32,7 @@ Requirements
 
 To be able to run the applications, you must install the libraries used with this command :
 
-``pip install requirements.txt
-``
+``pip install requirements.txt``
 
 ------
 Ollama
@@ -59,8 +58,7 @@ Linux
 ^^^^^
 
 
-``curl -fsSL https://ollama.com/install.sh | sh
-``
+``curl -fsSL https://ollama.com/install.sh | sh``
 
 ----------
 QuickStart
@@ -70,8 +68,7 @@ you can now easily get a LLM model locally and chat with it using ollama.
 
 open a cmd and run the command:
 
-``ollama run llama3.1
-``
+``ollama run llama3.1``
 
 *llama3.1 is the model used in this project*
 
