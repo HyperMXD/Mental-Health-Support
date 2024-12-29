@@ -13,4 +13,6 @@ This project aims to create a therapy chatbot that provides mental health suppor
    :caption: Table of Contents
 
    document_parsing_pipeline
+- `Explanations <document_parsing_pipeline.html#step-by-step-explanation>`_
    therapy_chatbot
+- `Key Components <therapy_chatbot.html#key-components>`_
